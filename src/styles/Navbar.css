@@ -1,0 +1,152 @@
+.navbar-container {
+  background-color: #eafeff;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  font-family: Lato, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+}
+
+#logo {
+  height: 100px;
+  transition: height 0.3s ease;
+}
+
+.logo-container {
+  width: 10%;
+  min-width: 100px;
+}
+
+.filter-products-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cart-container {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: right;
+  font-size: 18px;
+}
+
+.carrito {
+  font-size: 50px;
+  transition: font-size 0.3s ease;
+}
+
+.cart-link {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff4444;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+}
+
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+      height: 80px;
+      padding: 0 1rem;
+  }
+
+  #logo {
+      height: 60px;
+  }
+
+  .carrito {
+      font-size: 30px;
+  }
+
+  .mobile-menu-icon {
+      display: block;
+  }
+
+  .filter-products-container {
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      width: 100%;
+      height: calc(100vh - 80px);
+      background-color: #eafeff;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem;
+      transition: left 0.3s ease;
+      z-index: 1000;
+  }
+
+  .filter-products-container.active {
+      left: 0;
+  }
+
+  .filter-products-container > * {
+      margin: 1rem 0;
+      width: 100%;
+  }
+
+  .services-container {
+      width: 100%;
+  }
+
+  .services-menu {
+      position: static;
+      box-shadow: none;
+      border: none;
+      padding-left: 1rem;
+      background-color: transparent;
+      width: 100%;
+  }
+
+  .cart-container {
+      width: auto;
+  }
+}
+
+/* Quitar estilos por defecto de los links */
+.filter-products-container a,
+.filter-products-container a:visited,
+.cart-link,
+.cart-link:visited {
+    color: #333; /* Color oscuro neutro */
+    text-decoration: none;
+}
+
+/* Efecto hover para los links */
+.filter-products-container a:hover,
+.cart-link:hover {
+    color: #666; /* Color gris para hover */
+    text-decoration: underline;
+}
+
+/* Estilo específico para el título de servicios */
+.services-title {
+    color: #333 !important;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 0;
+}

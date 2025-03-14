@@ -1,0 +1,139 @@
+.cart-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 2rem;
+}
+
+.cart-items {
+  margin-bottom: 2rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.item-info {
+  flex: 2;
+}
+
+.remove-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.total-price {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.checkout-btn {
+  background: #28a745;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clear-btn {
+  background: #ffc107;
+  color: black;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.continue-shopping {
+  color: #007bff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+
+.checkout-form {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: #ff0000;
+  margin: 1rem 0;
+}
+
+
+.order-confirmation {
+  text-align: center;
+  padding: 2rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.order-confirmation h2 {
+  color: #4CAF50;
+  margin-bottom: 1rem;
+}
+
+a, a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
+  text-decoration: underline;
+}

@@ -1,0 +1,118 @@
+
+.product-details {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-details .emoji-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-details .emoji {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.product-details .emoji:hover {
+    transform: scale(1.1);
+}
+
+.product-details h2 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 15px;
+}
+
+.details-content {
+    padding: 20px;
+}
+
+.details-content > p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #34495e;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.details-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.details-section h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.details-section p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #34495e;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+    transition: transform 0.2s ease;
+}
+
+.details-section p:hover {
+    transform: translateX(10px);
+}
+
+.details-section strong {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .product-details {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .product-details h2 {
+        font-size: 2rem;
+    }
+
+    .details-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .details-content > p,
+    .details-section p {
+        font-size: 1rem;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product-details {
+    animation: fadeIn 0.5s ease-out;
+}
