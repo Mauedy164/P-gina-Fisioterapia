@@ -14,3 +14,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+.main-content {
+  margin-top: 100px;
+  margin-bottom: 100px; 
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 80px;
+    margin-bottom: 80px; 
+  }
+}

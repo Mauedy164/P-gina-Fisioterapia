@@ -1,0 +1,42 @@
+
+.about-me-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .therapist-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .therapist-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .therapist-info {
+    text-align: left;
+  }
+  
+  .verification-link {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .verification-link a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .verification-link a:hover {
+    text-decoration: none;
+  }
+  

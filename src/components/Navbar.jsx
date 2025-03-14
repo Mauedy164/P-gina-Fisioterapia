@@ -24,12 +24,13 @@ export function Navbar() {
 
       <div className={`filter-products-container ${isMobileMenuOpen ? 'active' : ''}`}>
         <Services onItemClick={() => setIsMobileMenuOpen(false)} />
-        <Link to="/Contact" onClick={() => setIsMobileMenuOpen(false)}>
-          <p>Contacto</p>
-        </Link>
         <Link to="/AboutMe" onClick={() => setIsMobileMenuOpen(false)}>
           <p>Nosotros</p>
         </Link>
+        <Link to="/Contact" onClick={() => setIsMobileMenuOpen(false)}>
+          <p>Contacto</p>
+        </Link>
+
       </div>
 
       <div className="cart-container">
