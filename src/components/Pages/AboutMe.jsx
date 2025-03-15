@@ -19,7 +19,7 @@ export function AboutMe() {
         <img src={monica} alt="Mónica Barrera" className="therapist-image" />
         <div className="therapist-info">
           <h2>Mónica Barrera</h2>
-          <p>Cédula: A-55254</p>
+          <p>Cédula: A-44530</p>
           <p>Terapia física y rehabilitación</p>
         </div>
       </div>
